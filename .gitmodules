@@ -16,3 +16,6 @@
 [submodule "vim/bundle/vimwiki"]
 	path = vim/bundle/vimwiki
 	url = https://github.com/vim-scripts/vimwiki
+[submodule "git-flow-completion"]
+	path = git-flow-completion
+	url = https://github.com/bobthecow/git-flow-completion
