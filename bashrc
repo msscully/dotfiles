@@ -1,6 +1,9 @@
 # Turn on vi keybindings
 set -o vi
 
+# make vim the default editor
+export EDITOR=vim
+
 # Needed for virtualenvwrapper to work
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
