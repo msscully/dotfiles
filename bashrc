@@ -19,3 +19,6 @@ echo -ne "Up time: ";uptime | awk /'up/ {print $3,$4}'
 
 # Allow Cntrl-s for forward search instead of xon/xoff
 stty -ixon
+
+# Make vim the default editor
+export EDITOR=vim
