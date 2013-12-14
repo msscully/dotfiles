@@ -1,3 +1,11 @@
+if [[ "$OSTYPE" == "darwin"* ]]
+then
+    export PATH=/usr/local:/usr/local/bin:$PATH;
+elif [[ "$OSTYPE" == "linux-gnu" ]]
+then
+    :
+fi
+
 # Turn on vi keybindings
 set -o vi
 
