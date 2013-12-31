@@ -170,3 +170,7 @@ autocmd FileType xhtml set textwidth=0
 autocmd FileType css set sw=2
 autocmd FileType css set ts=2
 autocmd FileType css set sts=2
+
+" Disable backups when using vim to edit crontab to prevent 
+" "crontab: temp file must be edited in place"
+au FileType crontab set nobackup nowritebackup
