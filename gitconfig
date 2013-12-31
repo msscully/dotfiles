@@ -1,0 +1,14 @@
+[user]
+	name = Mark Scully
+	email = mark.s.scully@gmail.com
+[color]
+	ui = auto
+[alias]
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	st = status -s
+	df = diff --color --color-words --abbrev
+[push]
+	default = simple
+[core]
+	excludesfile = /Users/mscully/.gitignore
