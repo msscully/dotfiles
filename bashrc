@@ -16,12 +16,17 @@ export EDITOR=vim
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
-# Welcome Message
-echo -e
-echo -ne "Up time: ";uptime | awk /'up/ {print $3,$4}'
+# Check if stdin is a terminal
+# -t is test, so $ man test
+if [ -t 1 ];
+then
+    # Allow Cntrl-s for forward search instead of xon/xoff
+    stty -ixon
 
-# Allow Cntrl-s for forward search instead of xon/xoff
-stty -ixon
+    # Welcome Message
+    echo -e
+    echo -ne "Up time: ";uptime | awk /'up/ {print $3,$4}'
+fi
 
 # Make vim the default editor
 export EDITOR=vim
