@@ -30,3 +30,5 @@ fi
 
 # Make vim the default editor
 export EDITOR=vim
+
+alias serve="python -m SimpleHTTPServer"
