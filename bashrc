@@ -31,4 +31,7 @@ fi
 # Make vim the default editor
 export EDITOR=vim
 
-alias serve="python -m SimpleHTTPServer"
+# Serve current directory using Twisted
+# To install on ubuntu
+# sudo apt-get install python-twisted-web (or python-twisted for the full engine)
+alias serve="twistd -no web --path=. -p 8080"
