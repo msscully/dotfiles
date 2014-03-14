@@ -75,7 +75,7 @@ let g:miniBufExplModSelTarget = 1
 " If there are any tasks to process 'T' opens the tasklist and 'q' quits it
 " again
 map T :TaskList<CR>
-map P :TlistToggle<CR>
+"map P :TlistToggle<CR>
 
 " Switch between tabs with Shift-RightArrow and Shift-LeftArrow
 map <S-Right> :bnext<CR>
@@ -174,3 +174,6 @@ autocmd FileType css set sts=2
 " Disable backups when using vim to edit crontab to prevent 
 " "crontab: temp file must be edited in place"
 au FileType crontab set nobackup nowritebackup
+
+" Set the max line length for flake8 checks
+let g:flake8_max_line_length=99
