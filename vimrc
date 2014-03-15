@@ -174,3 +174,6 @@ autocmd FileType css set sts=2
 " Disable backups when using vim to edit crontab to prevent 
 " "crontab: temp file must be edited in place"
 au FileType crontab set nobackup nowritebackup
+
+" Set indent to 4 spaces for html
+setlocal sw=4 sts=4 et
