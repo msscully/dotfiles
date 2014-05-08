@@ -186,5 +186,7 @@ let g:syntastic_check_on_open=1
 "let g:syntastic_python_checkers=['flake8']
 
 " Set the max line length for flake8 checks
-let g:flake8_max_line_length=99
 le g:syntastic_python_flake8_args= ""--max-line-length=99"
+
+" Set indent to 4 spaces for html
+setlocal sw=4 sts=4 et
