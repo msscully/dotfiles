@@ -74,7 +74,7 @@ let g:miniBufExplModSelTarget = 1
 " Add mappings for TaskList :www.vim.org/scripts/script.php?script_id=2607
 " If there are any tasks to process 'T' opens the tasklist and 'q' quits it
 " again
-map T :TaskList<CR>
+"map T :TaskList<CR>
 "map P :TlistToggle<CR>
 
 " Switch between tabs with Shift-RightArrow and Shift-LeftArrow
@@ -175,5 +175,16 @@ autocmd FileType css set sts=2
 " "crontab: temp file must be edited in place"
 au FileType crontab set nobackup nowritebackup
 
+" Always update error list with correct code locations
+let g:syntastic_always_populate_loc_list = 1
+
+" Aggregate all syntastic checker errors
+let g:syntastic_aggregate_errors = 1
+
+let g:syntastic_check_on_open=1
+
+"let g:syntastic_python_checkers=['flake8']
+
 " Set the max line length for flake8 checks
 let g:flake8_max_line_length=99
+le g:syntastic_python_flake8_args= ""--max-line-length=99"
